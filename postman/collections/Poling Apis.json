@@ -1,0 +1,221 @@
+{
+	"info": {
+		"_postman_id": "e03c0b89-f3fd-4a3e-8d41-7633b7458fc4",
+		"name": "Poling Apis",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_uid": "14895986-e03c0b89-f3fd-4a3e-8d41-7633b7458fc4"
+	},
+	"item": [
+		{
+			"name": "View All Questions",
+			"id": "505cbc03-341f-43bd-be1c-16a5b872b79c",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJvbmxpbmVTdGF0dXMiOnRydWUsIl9pZCI6IjY0NWY5MTdmYTc3OTliMjk4Nzg4YTQ2ZSIsImVtYWlsIjoic2hpenVrYUBnbWFpbC5jb20iLCJuYW1lIjoiU2hpenVrYSBDaG91ZGhhcnkiLCJwYXNzd29yZCI6IjEyMzQ1IiwiY3JlYXRlZEF0IjoiMjAyMy0wNS0xM1QxMzozMjo0Ny4yOTRaIiwidXBkYXRlZEF0IjoiMjAyMy0wNi0wMlQxMzoxMzowMC4zMzNaIiwiX192IjoxLCJhdmF0YXIiOiIvdXBsb2Fkcy91c2Vycy9hdmF0YXJzL2F2YXRhci0xNjg1MjA5NjY0Mzg4IiwiZnJpZW5kc2hpcHMiOltdLCJpYXQiOjE2ODU3MTI3MjUsImV4cCI6MTY4NTcxMjgyNX0.LxgkvJQtC78kRJLs-RVTdCdq4lJvcWM0Mw4zu4wvsNc",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": []
+				},
+				"url": {
+					"raw": "{{base_url}}/question",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"question"
+					]
+				},
+				"description": "Displays all the questions."
+			},
+			"response": []
+		},
+		{
+			"name": "Create Question",
+			"id": "4732525c-57a2-4894-a6c0-5940d16b702e",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJvbmxpbmVTdGF0dXMiOnRydWUsIl9pZCI6IjY0NWY5MTdmYTc3OTliMjk4Nzg4YTQ2ZSIsImVtYWlsIjoic2hpenVrYUBnbWFpbC5jb20iLCJuYW1lIjoiU2hpenVrYSBDaG91ZGhhcnkiLCJwYXNzd29yZCI6IjEyMzQ1IiwiY3JlYXRlZEF0IjoiMjAyMy0wNS0xM1QxMzozMjo0Ny4yOTRaIiwidXBkYXRlZEF0IjoiMjAyMy0wNi0wMlQxMzoxMzowMC4zMzNaIiwiX192IjoxLCJhdmF0YXIiOiIvdXBsb2Fkcy91c2Vycy9hdmF0YXJzL2F2YXRhci0xNjg1MjA5NjY0Mzg4IiwiZnJpZW5kc2hpcHMiOltdLCJpYXQiOjE2ODU3MTI3MjUsImV4cCI6MTY4NTcxMjgyNX0.LxgkvJQtC78kRJLs-RVTdCdq4lJvcWM0Mw4zu4wvsNc",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "question",
+							"value": "What is your favorite IPL team?",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{base_url}}/question/create",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"question",
+						"create"
+					]
+				},
+				"description": "Create a new question."
+			},
+			"response": []
+		},
+		{
+			"name": "View Question By id",
+			"id": "083ed594-766f-46da-b5bb-3d1c3a390174",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJvbmxpbmVTdGF0dXMiOnRydWUsIl9pZCI6IjY0NWY5MTdmYTc3OTliMjk4Nzg4YTQ2ZSIsImVtYWlsIjoic2hpenVrYUBnbWFpbC5jb20iLCJuYW1lIjoiU2hpenVrYSBDaG91ZGhhcnkiLCJwYXNzd29yZCI6IjEyMzQ1IiwiY3JlYXRlZEF0IjoiMjAyMy0wNS0xM1QxMzozMjo0Ny4yOTRaIiwidXBkYXRlZEF0IjoiMjAyMy0wNi0wMlQxMzoxMzowMC4zMzNaIiwiX192IjoxLCJhdmF0YXIiOiIvdXBsb2Fkcy91c2Vycy9hdmF0YXJzL2F2YXRhci0xNjg1MjA5NjY0Mzg4IiwiZnJpZW5kc2hpcHMiOltdLCJpYXQiOjE2ODU3MTI3MjUsImV4cCI6MTY4NTcxMjgyNX0.LxgkvJQtC78kRJLs-RVTdCdq4lJvcWM0Mw4zu4wvsNc",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": []
+				},
+				"url": {
+					"raw": "{{base_url}}/question/6480a08b15592d2b7140fa66",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"question",
+						"6480a08b15592d2b7140fa66"
+					]
+				},
+				"description": "View a question and all its options along with number of votes to its each option by using id of the question."
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Question",
+			"id": "a64c57d6-a6c2-4a23-8d02-844d76634ca5",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/question/6480a08b15592d2b7140fa66/delete",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"question",
+						"6480a08b15592d2b7140fa66",
+						"delete"
+					]
+				},
+				"description": "Delete a question by using its id."
+			},
+			"response": []
+		},
+		{
+			"name": "Create Option",
+			"id": "9368370a-8fed-4512-9280-1bf9747b565d",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "option",
+							"value": "MI",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{base_url}}/question/6480a08b15592d2b7140fa66/option/create",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"question",
+						"6480a08b15592d2b7140fa66",
+						"option",
+						"create"
+					]
+				},
+				"description": "Create option for a question by using id of question."
+			},
+			"response": []
+		},
+		{
+			"name": "Add Vote",
+			"id": "5c6763e8-159c-426e-96fb-edf6d3eed877",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/option/6480cb686ec5684d9629fade/add-vote",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"option",
+						"6480cb686ec5684d9629fade",
+						"add-vote"
+					]
+				},
+				"description": "Add vote to an option by using its id."
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Option",
+			"id": "59e7d1ce-8cc7-487b-93c0-27453ca6e1e1",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/option/6480cb686ec5684d9629fade/delete",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"option",
+						"6480cb686ec5684d9629fade",
+						"delete"
+					]
+				},
+				"description": "Delete an option by using its id"
+			},
+			"response": []
+		}
+	]
+}

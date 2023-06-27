@@ -1,0 +1,47 @@
+{
+  "name": "polling",
+  "version": "1.0.0",
+  "description": "Polling",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/imdivyachoudhary/Polling.git"
+  },
+  "author": "Divya Choudhary",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/imdivyachoudhary/Polling/issues"
+  },
+  "homepage": "https://github.com/imdivyachoudhary/Polling#readme",
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "connect-mongo": "^2.0.3",
+    "cookie-parser": "^1.4.6",
+    "date-fns": "^2.30.0",
+    "del": "^4.1.1",
+    "ejs": "^3.1.9",
+    "express": "^4.18.2",
+    "express-ejs-layouts": "^2.5.1",
+    "express-session": "^1.17.3",
+    "gulp-cssnano": "^2.1.3",
+    "gulp-imagemin": "^6.0.0",
+    "gulp-rev": "^9.0.0",
+    "gulp-sass": "^5.1.0",
+    "gulp-uglify-es": "^1.0.4",
+    "mongodb": "^5.6.0",
+    "mongoose": "^5.13.17",
+    "multer": "^1.4.5-lts.1",
+    "node-sass-middleware": "^1.0.1",
+    "nodemon": "^2.0.22",
+    "passport": "^0.6.0",
+    "passport-local": "^1.0.0",
+    "sass": "^1.62.1"
+  },
+  "devDependencies": {
+    "gulp": "^4.0.2"
+  }
+}
